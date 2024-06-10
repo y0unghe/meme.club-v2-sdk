@@ -1,0 +1,24 @@
+{
+  "name": "mint.club-v2-sdk",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vocs dev",
+    "build": "vocs build",
+    "preview": "vocs preview",
+    "link-sdk": "npx npm link mint.club-v2-sdk",
+    "unlink-sdk": "npx npm unlink mint.club-v2-sdk && npx bun install mint.club-v2-sdk@latest",
+    "deploy": "vercel build --prod && vercel deploy --prebuilt --prod"
+  },
+  "dependencies": {
+    "@types/react": "latest",
+    "mint.club-v2-sdk": "0.0.68",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest",
+    "vocs": "latest"
+  },
+  "devDependencies": {
+    "vercel": "^33.5.3"
+  }
+}
